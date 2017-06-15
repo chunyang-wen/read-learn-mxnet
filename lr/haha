@@ -1,0 +1,9 @@
+digraph plot {
+	data [label=data fillcolor="#8dd3c7" fixedsize=true height=0.8034 shape=oval style=filled width=1.3]
+	fc1 [label="FullyConnected\n1" fillcolor="#fb8072" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+	lin_reg_label [label=lin_reg_label fillcolor="#8dd3c7" fixedsize=true height=0.8034 shape=oval style=filled width=1.3]
+	lro [label=lro fillcolor="#fccde5" fixedsize=true height=0.8034 shape=box style=filled width=1.3]
+		fc1 -> data [arrowtail=open dir=back]
+		lro -> fc1 [arrowtail=open dir=back]
+		lro -> lin_reg_label [arrowtail=open dir=back]
+}
